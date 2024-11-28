@@ -1,9 +1,13 @@
-# GCE LOSS (Will be removed before pushing this branch) 
-
-![gce-image.png](image.png)
-
-
 # Regress, Don’t Guess – A Regression-like Loss on Number Tokens for Language Models
+
+## Gaussian Cross-Entropy (GCE)
+In this branch/fork, Gaussian Cross-Entropy is implemented. A visualization of this loss function can be found below.  
+
+![gce-image.png](gce-image.png)
+
+(The readme is only relevant for this branch/fork, and should not be merged) 
+
+## Number Token Loss (NTL)
 ![ntl-image.jpg](resources%2Fntl-image.jpg)
 
 Introducing "Number Token Loss" (NTL) for language models to improve numerical reasoning by using regression-based loss functions that account for the proximity of numbers, achieving better performance on math tasks without increasing computational overhead.
