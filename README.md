@@ -1,3 +1,8 @@
+# GCE LOSS (Will be removed before pushing this branch) 
+
+![gce-image.png](image.png)
+
+
 # Regress, Don’t Guess – A Regression-like Loss on Number Tokens for Language Models
 ![ntl-image.jpg](resources%2Fntl-image.jpg)
 
