@@ -253,7 +253,10 @@ def run_language_modeling(model_args: ModelArguments, training_args: TrainingArg
             )
 
     if model_args.gaussian_label_smoother: 
-        selector = NumberTokenSelector(tokenizer, vocab_size=config.vocab_size) 
+        # Pass a properly initialized `nvocab` instead of `vocab_size`
+        nvocab = torch.full((config.vocab_size,), float('nan'))  # Create a placeholder nvocab tensor
+        
+        selector = NumberTokenSelector(tokenizer, nvocab=nvocab) 
         label_smoother = GaussianLabelSmoother(
             sigma=model_args.label_smoother_sigma,           
             ignore_index=-100,   
